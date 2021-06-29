@@ -8,3 +8,10 @@
 # Например, 1 корова, 2 коровы, 5 коров, 125 коров.
 
 # TODO: your code here
+number = input("На лугу пасется: ")
+if number[-1] == "1" and number[-2] != "1":
+    print("Корова")
+elif 2<= int(number[-1]) <= 4 and number[-2] != "1":
+    print("Коровы")
+else:
+    print("Коров")
